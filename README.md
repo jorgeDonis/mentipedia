@@ -1,4 +1,4 @@
-# mentipedia
+# Mentipedia
 Mentipedia - la enciclopedia de mentiras
 
 Mentipedia es un proyecto de software libre cuyo propósito es acercar a las personas a la verdad. Esta enciclopedia recoge las mentiras de diversas figuras 
