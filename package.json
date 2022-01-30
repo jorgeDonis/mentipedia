@@ -1,0 +1,28 @@
+{
+  "name": "mentipedia",
+  "version": "1.0.0",
+  "description": "Mentipedia - la enciclopedia de mentiras",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorgeDonis/mentipedia.git"
+  },
+  "keywords": [],
+  "author": "Jorge Donis del Álamo",
+  "license": "GPL v2",
+  "bugs": {
+    "url": "https://github.com/jorgeDonis/mentipedia/issues"
+  },
+  "homepage": "https://github.com/jorgeDonis/mentipedia#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "dotenv": "^14.3.2",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "jquery": "^3.6.0",
+    "remove": "^0.1.5"
+  }
+}
