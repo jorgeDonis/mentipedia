@@ -5,10 +5,27 @@
 
 <%- include('header.ejs') %>
 
-<div class="p-5 mb-4 rounded-3">
-    <div class="container-fluid mx-5 px-5 py-5">
+<div class="p-5 mb-4 rounded-3 mx-auto" style="width: 85%;">
+    <div class="container-fluid mx-5 py-5">
         <h1 class="display-5 fw-bold">Mentipedia</h1>
         <p class="col-md-8 fs-4">La enciclopedia de las mentiras</p>
+    </div>
+
+    <br><br>
+
+    <div class="row">
+        <% damned.forEach((damned, index) => { %>
+            <div class="col-3">
+                <div class="card mx-5" style="width: 18rem;">
+                    <img src="<%= damned.imageUrl %>" class="card-img-top"/>
+                    <div class="card-body">
+                        <h5 class="card-title"><%= damned.name %></h5>
+                        <p class="card-text"><%= damned.description %></p>
+                        <a href="<%= damned.damnedUrl %>" class="btn btn-danger"><%= damned.noLies %> mentiras</a>
+                    </div>
+                </div>
+            </div>
+        <%});%>
     </div>
 </div>
 

@@ -2,10 +2,15 @@
 
 // Imports
 const express = require('express')
-const { router } = require('./controller');
+const { router } = require('./router');
+const dbconnection = require('./models/dbconnection')
+
 
 // Import environment variables
 require('dotenv').config();
+
+// Start DB
+dbconnection.connect();
 
 const app = express();
 app.set('view engine', 'ejs');
